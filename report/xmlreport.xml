@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="38.242" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Check adactine in hooks" name="Login to adactine - Example #1.1" time="37.885">
+<failure type="org.openqa.selenium.NoSuchElementException" message="Cannot locate element with text: 1
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-0B1OR7TV', ip: '192.168.29.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: driver.version: unknown">
+<![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 1
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-0B1OR7TV', ip: '192.168.29.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at org.basepage.BasePage.selectFromDropDown(BasePage.java:103)
+	at pages.HomePage.setNumberOfRooms(HomePage.java:42)
+	at org.stepdefinition.homePage.select_number_of_rooms(homePage.java:59)
+	at ?.select number of rooms(file:///C:/Workspace/CucumberProject1/src/test/resources/features/homePage.feature:10)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user is on homepage...................................................passed
+When they enter username "SaravananSaran" and password "Saran@123"..........passed
+And user click login button.................................................passed
+Then user should go to homepage successfully................................passed
+And select location drop down...............................................passed
+And select the Hotels.......................................................passed
+And select the Room types...................................................passed
+And select number of rooms..................................................failed
+Then Add check in date......................................................skipped
+And Add check out date......................................................skipped
+And select adults per room drop down........................................skipped
+Then select childrens per room drop down....................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
